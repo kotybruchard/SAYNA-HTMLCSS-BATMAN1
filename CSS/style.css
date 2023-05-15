@@ -1,0 +1,630 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --yellow-primary:#ffff00;
+    --beige:#f8f184;
+    --bleu:#19587d;
+    --white:#ffffff;
+    --rouge:#b11313;
+    --noire-primary:#0d0e09;
+    --noire:#000000;
+    --grey:#c4c4c4;
+    --rouge-transparent:rgba(177, 19, 19,0.6);
+    --white-transparent:rgba(255, 255, 255, 0.055);
+}
+
+/* scroll + contour */
+*{
+    scroll-behavior: smooth;
+}
+
+
+.scroll-fixed{
+    text-align: center;
+    position:fixed;
+    right: 51px;
+    top:40%;
+    z-index: 2;
+}
+.scroll-fixed >*{
+    display:block;
+    margin: auto;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.image-scroll-btn{
+    height: 500px;
+    background-color: #000000;
+ }
+ 
+  .image-scroll-btn div{
+     text-align: center;
+     z-index: 0;
+ }
+
+ .image-scroll-btn div  img{
+    margin-top:100px;
+    cursor: pointer;
+ }
+
+ .description,.image-scroll-btn div  img{
+    transform: translateX(-1000px);
+    transition: 1s;
+    z-index: 1;
+}
+
+.contour_left{
+    width: 4px;
+    height: 100vh;
+    background-color: #BCBBBD30;
+    position: fixed;
+    left:102px;
+    z-index: 1;
+}
+.contour_right{
+    width: 4px;
+    height: 100vh;
+    background-color: #BCBBBD30;
+    position: fixed;
+    right:102px;
+    z-index: 1;
+}
+
+.contour_top{
+    
+    height: 4px;
+    background-color: #BCBBBD30;
+    position: absolute;
+    right:102px;
+    left: 102px;
+    z-index: 1;
+}
+
+/* landing page */
+
+.landing-page{
+    background-image: url("../Assets/Illustrations/Bathome1.png");
+    background-size: cover;
+    height: 120vh;
+    z-index: 1;
+}
+.landing{
+    padding-bottom: 200px;
+    overflow: hidden;
+}
+
+.landing-description{
+    margin-top: 20%;
+}
+header{
+    border-top:none;
+    width: 90%;
+    margin: auto;
+}
+header nav{
+    justify-content: space-around;
+}
+header nav a{
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 10px;
+    font-family: 'Titre';
+}
+header nav a span{
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 0%;
+    transition: 0.2s;
+}
+
+
+.aunom p{
+    margin-top: 20%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-family: 'Texte';
+    font-size: 18px;
+    text-align: center;
+}
+
+.nom{
+    color: white;
+    margin-bottom: 6%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Texte';
+    font-size: 22px;
+}
+
+.voir{
+    margin-top: -20%;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    padding: 12px;
+    min-width: 200px;
+    margin: 20px;
+    background: linear-gradient(45deg,rgba(255, 255, 255, 0.233),var(--rouge-transparent));
+    border: none;
+    font-size: 20px;
+    font-family: 'Titre';
+}
+
+
+.down{
+    display: flex;
+    justify-content: center;
+}
+
+#mj{
+    color: white;
+    margin-left: 2%;
+    font-family: 'Titre';
+    font-size: 36px;
+    margin-top: -50%;
+    padding-top: -100%;
+    font-family: 'Titre';
+    font-size: 36px;
+}
+
+#au{
+    margin-top: -50%;
+    color: white;
+    font-family: 'Titre';
+    font-size: 36px;
+    margin-left: 2%;
+}
+
+/* hover sur les boutons */
+.button:hover{
+    background: linear-gradient(45deg,rgba(255, 255, 255, 1),var(--rouge));
+    transition: 1s;
+}
+
+/* batman au cinema + nemesis + allies + hover */
+
+.cinema-batman,.nemesis{
+    background-color:var(--noire);
+}
+
+header .logo:hover{
+  -webkit-filter: grayscale(100%) brightness(200%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(1);
+  filter: grayscale(50%) brightness(70%) sepia(100%) hue-rotate(5deg) contrast(1);
+}
+
+.scroll-fixed img:hover{
+    -webkit-filter: grayscale(100%) brightness(200%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(1);
+  filter: grayscale(50%) brightness(70%) sepia(100%) hue-rotate(5deg) contrast(1);
+}
+ 
+.text-white{
+    font-family: 'Texte';
+    font-size: 18px;
+    margin-left: 2%;
+}
+
+
+.bat3{
+    margin-top: -15%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #000000;
+    color: white;
+}
+.bat31:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.bat32:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.bat33:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+#bat312{
+    margin-left: 20%;
+    height: auto;
+}
+
+#bat313{
+    margin-left: -20%;
+    height: auto;
+}
+
+#ba3{
+    text-align: center;
+}
+
+#ba9{
+    text-align: center;
+    margin-left: 30%;
+}
+
+#ba10{
+    text-align: center;
+    margin-left: -30%;
+}
+#ba3,#ba9,#ba10{
+    font-family: "Titre";
+    font-size: 20px;
+}
+
+.chose{
+    margin-left: 20%;
+    margin-bottom: -4%;
+}
+.nemesis{
+    padding-top: -70%;
+}
+
+.bat4{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #000000;
+    color: white;
+}
+
+.bat41:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.bat42:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.bat43:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+#mj{
+    margin-top: 2%;
+}
+
+.aille{
+    margin-left: 80%;
+    margin-top: -7%;
+}
+
+.allies{
+    background-color: #000000;
+}
+
+.texteAll{
+    color: white;
+    font-family: 'Texte';
+    font-size: 18px;
+}
+
+.bat5{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #000000;
+    color: white;
+}
+
+.bat51:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.bat52:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.bat53:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+/* justice league + multimédia */
+.justic{
+    background-color: #000000;
+}
+
+#bat61{
+    max-width : 100%;
+    height : auto;
+}
+
+.texteJust{
+    color: white;
+    font-family: 'Texte';
+    font-size: 18px;
+}
+
+
+.cont{
+    display: flex;
+    width: 60%;
+    border: 0;
+    border-radius: 20px;
+    margin: 20px 50px 20px 50px;
+    padding: auto;
+    margin-top: 0px;
+    height: -700px;
+    background-image: linear-gradient(to bottom right,#4e4a40, #081d2a);
+    border-left: -50px;
+}
+
+
+.contTXT{
+    margin-left: 20px;
+    color: white;
+    font-size: 12px;
+    font-family: "Texte";
+}
+
+#act{
+    margin-top: 12px;
+    font-size: 12px;
+    font-family: "Texte";
+}
+
+#batn{
+    font-size: 20px;
+    font-family: "Titre";
+}
+
+#IMDB{
+    font-size: 18px;
+    font-family: "Texte";
+}
+
+#deux{
+    color: #f8f184;
+}
+
+.multimedia{
+    background-color: var(--noire);
+}
+
+#prev{
+    position:absolute;
+    left: 15%;
+}
+
+
+#next{
+    position:absolute;
+    right:10%;
+}
+
+
+/* bande annonce */
+.bande1 img:hover{
+    color: whitesmoke;
+    box-shadow: 2px 2px 4px whitesmoke;
+}
+
+.bande{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.bande1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13%;
+    margin-left: 9%;
+}
+.bande_annonce{
+    background-color: var(--noire);
+}
+
+
+/* footer */
+
+ .active{
+     font-weight: bolder;
+} 
+
+.active >span{
+    width: 100%;
+}
+
+ .card-container{
+    padding-bottom: 0!important;
+    margin-bottom: 0!important;
+}
+
+.citation-container{
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.citations-active{
+    display: block;
+}
+
+.prendre_contact{
+    background-image: linear-gradient(-45deg,#183241,#3f3c3c);
+    color: white;
+}
+
+.popup{
+    background-image: linear-gradient(-45deg,#183241,#3f3c3c);
+    width:70%;
+    min-height: 400px;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    z-index: 1;
+    margin-bottom:100px ;
+}
+
+.form-champ{
+     border: none;
+    border-radius: 0;
+    border-bottom: 2px solid var(--white); 
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.pointPoint{
+    display:flex;
+    justify-content: space-around;
+    width:200px;
+   margin: auto;
+}
+.pointPoint span{
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--bleu);
+    border-radius: 100%;
+}
+.pointActive{
+    background-color: var(--bleu);
+}
+
+.footer-container{
+    background-color: var(--noire);
+}
+
+
+
+/* contact */
+
+.prendre_contact p{
+    color:grey;
+}
+
+.prendre_contact form label{
+    font-size: 18px;
+}
+
+.prendre_contact .news button{
+    border-radius: 0;
+    color: var(--white);
+    font-size: 12px;
+    border: 1px solid grey;
+}
+
+.prendre_contact form #submit{
+    background-image: linear-gradient(-45deg,#b11313,rgb(116, 112, 112));
+    border-radius: 0;
+    border: none;
+    padding: 10px 30px;
+}
+.prendre_contact option{
+    background-image: linear-gradient(-45deg,#183241,#3f3c3c);
+    padding: 10px;
+}
+
+.pren{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: -5%;
+    margin-bottom: 7%;
+    font-family: 'Titre';
+}
+
+.card{
+    cursor: pointer;
+}
+
+
+.quiz_area{
+  color: white;
+}
+
+.quiz_area .form-check{
+    background-color:grey ;
+    margin: 10px;
+    padding: 0;
+    outline: none;
+}
+
+.quiz_area .form-check .form-check-input{
+    padding: 20px;
+    border-radius: 0;
+    margin: 10px;
+}
+
+[value]{
+    background-color: #c4c4c4;
+}
+
+
+/* fonts */
+@font-face{
+    font-family: 'Titre';
+    src: url('/fonts/Rajdhani-Medium.ttf');
+}
+
+@font-face{
+    font-family: 'Legende';
+    src: url('/fonts/SpaceGrotesk-Bold.ttf');
+}
+
+@font-face{
+    font-family: 'Texte';
+    src: url('/fonts/SpaceGrotesk-Regular.ttf');
+}
+
+/* responsivité du site */
+
+@media screen and (max-width:1100px){
+    .multimedia{
+        display:none;
+    }
+   header{
+       width:70% ;
+   }
+
+   .row .card{
+       width:60%;
+       margin: auto;
+   }
+}
+
+@media screen and (max-width:800px){
+    .contour_left{
+        display: none;
+    }
+    .contour_right{
+        display: none;
+    }
+    
+    .contour_top{
+        display: none;
+    }
+
+    .scroll-fixed{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .bath3, .bat4, .bath5{
+        display: flex;
+    }
+}
+
+
